@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#06101a">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="J.A.R.V.I.S  SETUP"
+            android:textColor="#00d4ff"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:fontFamily="monospace"
+            android:gravity="center"
+            android:layout_marginBottom="6dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ultimate V3 — First Time Setup"
+            android:textColor="#557799"
+            android:textSize="12sp"
+            android:fontFamily="monospace"
+            android:gravity="center"
+            android:layout_marginBottom="28dp"/>
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="AI Provider:" android:textColor="#aabbcc" android:textSize="12sp"
+            android:fontFamily="monospace" android:layout_marginBottom="8dp"/>
+
+        <RadioGroup android:id="@+id/provider_group"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="horizontal" android:layout_marginBottom="16dp">
+
+            <RadioButton android:id="@+id/rb_gemini" android:layout_width="0dp"
+                android:layout_height="wrap_content" android:layout_weight="1"
+                android:text="Gemini" android:textColor="#aabbcc" android:checked="true"/>
+            <RadioButton android:id="@+id/rb_claude" android:layout_width="0dp"
+                android:layout_height="wrap_content" android:layout_weight="1"
+                android:text="Claude" android:textColor="#aabbcc"/>
+            <RadioButton android:id="@+id/rb_openai" android:layout_width="0dp"
+                android:layout_height="wrap_content" android:layout_weight="1"
+                android:text="GPT" android:textColor="#aabbcc"/>
+            <RadioButton android:id="@+id/rb_groq" android:layout_width="0dp"
+                android:layout_height="wrap_content" android:layout_weight="1"
+                android:text="Groq" android:textColor="#aabbcc"/>
+        </RadioGroup>
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="API Key:" android:textColor="#aabbcc" android:textSize="12sp"
+            android:fontFamily="monospace" android:layout_marginBottom="6dp"/>
+        <EditText android:id="@+id/api_key_input"
+            android:layout_width="match_parent" android:layout_height="48dp"
+            android:hint="Paste API key here" android:hintTextColor="#334455"
+            android:textColor="#c0e0ff" android:background="@drawable/input_bg"
+            android:paddingHorizontal="12dp" android:inputType="textPassword"
+            android:layout_marginBottom="20dp"/>
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="PC JARVIS IP (optional):" android:textColor="#aabbcc"
+            android:textSize="12sp" android:fontFamily="monospace"
+            android:layout_marginBottom="6dp"/>
+        <EditText android:id="@+id/pc_host_input"
+            android:layout_width="match_parent" android:layout_height="48dp"
+            android:hint="e.g. 192.168.1.5" android:hintTextColor="#334455"
+            android:textColor="#c0e0ff" android:background="@drawable/input_bg"
+            android:paddingHorizontal="12dp" android:inputType="textUri"
+            android:layout_marginBottom="28dp"/>
+
+        <Button android:id="@+id/save_btn"
+            android:layout_width="match_parent" android:layout_height="48dp"
+            android:text="SAVE AND START JARVIS"
+            android:textColor="#000000" android:background="#00d4ff"
+            android:textStyle="bold" android:fontFamily="monospace"
+            android:layout_marginBottom="12dp"/>
+
+        <Button android:id="@+id/skip_btn"
+            android:layout_width="match_parent" android:layout_height="48dp"
+            android:text="SKIP — USE OFFLINE"
+            android:textColor="#00d4ff" android:background="@drawable/btn_bg_outline"/>
+    </LinearLayout>
+</ScrollView>
