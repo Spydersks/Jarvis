@@ -1,0 +1,7 @@
+-keep class com.jarvis.mobile.** { *; }
+-keep class org.java_websocket.** { *; }
+-dontwarn org.java_websocket.**
+-dontwarn okhttp3.**
+-dontwarn okio.**
+-keep class okhttp3.** { *; }
+-keep class okio.** { *; }

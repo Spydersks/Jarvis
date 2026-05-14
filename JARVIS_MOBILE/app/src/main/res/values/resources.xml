@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">JARVIS</string>
+    <string name="channel_name">JARVIS Assistant</string>
+    <string name="wake_channel">JARVIS Wake</string>
+    <color name="arc_blue">#00d4ff</color>
+    <color name="bg_dark">#06101a</color>
+    <color name="text_light">#c0e0ff</color>
+    <color name="green_ok">#00ff88</color>
+    <style name="Theme.Jarvis" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">#00d4ff</item>
+        <item name="colorPrimaryVariant">#005577</item>
+        <item name="colorOnPrimary">#000000</item>
+        <item name="colorSurface">#091520</item>
+        <item name="android:windowBackground">#06101a</item>
+        <item name="android:statusBarColor">#000000</item>
+    </style>
+</resources>
